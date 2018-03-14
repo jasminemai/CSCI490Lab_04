@@ -42,7 +42,8 @@ public class JsonTask extends AsyncTask<String, Void, String>{
             int i = 0;
             while(i < 25)
             {
-                line = in.readLine();
+                line += in.readLine();
+
                 i++;
             }
             in.close();
